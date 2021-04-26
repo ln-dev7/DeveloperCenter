@@ -1,0 +1,1 @@
+../../../.././dart-sass/sass ../css/style_sigin.scss ../css/style_sigin.css --style=compressed --no-source-map --watch

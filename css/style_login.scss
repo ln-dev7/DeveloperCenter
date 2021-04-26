@@ -1,0 +1,108 @@
+@import 'index';
+
+.login{
+    background: $blanc;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    box-shadow: -4px -4px 4px rgba($color: $noir, $alpha: 0.25),
+                4px 4px 4px rgba($color: $noir, $alpha: 0.25);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid 1px rgba($color: $noir, $alpha: 0.25);
+    padding: 30px;
+    overflow: hidden;
+    &-title{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2em;
+        color: $vert;
+    }
+    &-data{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &-input{
+            margin: 10px 0;
+            padding: 15px 30px 15px 10px;
+            width: 400px;
+            background: $blancgris;
+            border-bottom: solid 1px $noir;
+            border-top: solid 0.5px rgba($color: $noir, $alpha: 0.1);
+            border-left: solid 0.5px rgba($color: $noir, $alpha: 0.1);
+            border-right: solid 0.5px rgba($color: $noir, $alpha: 0.1);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            outline: none;
+            overflow: hidden;
+            font-weight: bold;
+            transition: all 1s;
+            &:focus{
+                background: rgba($color: $vert, $alpha: 0.25);
+                border-bottom: solid 1px $vert;
+                color: $noir;
+            }
+        }
+        &-password-marked{
+            position: absolute;
+            top: 43.5%;
+            right: 10px;
+            width: 15px;
+            height: 15px;
+            transition: all 1s;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &-password-marked-active{
+            @extend .login-data-password-marked;
+            display: none;
+        }
+        &-button{
+            padding: 15px;  
+            margin-top: 20px;
+            margin-bottom: 15px; 
+            width: 400px;
+            background-color: $vert; 
+            color: rgb(255, 255, 255);
+            transition: all 1s;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            &:hover{
+              box-shadow: 4px 4px 4px rgba($color: $noir, $alpha: 0.25);
+              cursor: pointer;
+            }
+        }
+    }
+    .hr{
+        padding: 0;
+        right: 0;
+        left: 0;
+        height: 0.5px;
+        background: $grisnoir;
+    }
+    &-footer{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        &-sigin{
+            font-size: 0.8em;
+            font-weight: bold;
+            color: $noir;
+            span{
+                color: $vert; 
+                font-weight: bold;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
