@@ -23,11 +23,11 @@
             <li class="header-nav-titles"><a href="#" class="header-nav-titles-links">Infos</a></li>
         </ul>
     </div>
-    <div class="login">
+    <div method="post" action="" class="login">
         <h2 class="login-title">Connectez vous</h2>
         <form class="login-data">
-            <input type="email" class="login-data-input login-data-email" placeholder="Entrez votre email" required>
-            <input type="password" class="login-data-input login-data-password" placeholder="Entrez votre mot de passe" required> 
+            <input type="email" name="login-data-email" class="login-data-input login-data-email" placeholder="Entrez votre email" required>
+            <input type="password" name="login-data-password" class="login-data-input login-data-password" placeholder="Entrez votre mot de passe" required> 
             <img src="images/eye.png" class="login-data-password-marked">
             <img src="images/invisible.png" class="login-data-password-marked-active">
             <input type="submit" class="login-data-button" value="SE CONNECTER">
@@ -39,11 +39,11 @@
     </div>
     <div class="sigin">
         <h2 class="sigin-title">Inscrivez vous</h2>
-        <form class="sigin-data">
-            <input type="text" class="sigin-data-input sigin-data-pseudo" placeholder="Entrez votre pseudo" required>
-            <input type="email" class="sigin-data-input sigin-data-email" placeholder="Entrez votre email" required>
-            <input type="password" class="sigin-data-input sigin-data-password" placeholder="Entrez votre mot de passe" required> 
-            <input type="password" class="sigin-data-input sigin-data-veri-password" placeholder="Confirmez votre mot de passe" required><br>
+        <form method="post" action="" class="sigin-data">
+            <input type="text" name="sigin-data-pseudo" class="sigin-data-input sigin-data-pseudo" placeholder="Entrez votre pseudo" required>
+            <input type="email" name="sigin-data-email" class="sigin-data-input sigin-data-email" placeholder="Entrez votre email" required>
+            <input type="password" name="sigin-data-password" class="sigin-data-input sigin-data-password" placeholder="Entrez votre mot de passe" required> 
+            <input type="password" name="sigin-data-veri-password" class="sigin-data-input sigin-data-veri-password" placeholder="Confirmez votre mot de passe" required><br>
             <img src="images/eye.png" class="sigin-data-password-marked">
             <img src="images/invisible.png" class="sigin-data-password-marked-active">
             <input type="submit" class="sigin-data-button" value="S' INSCRIRE">
