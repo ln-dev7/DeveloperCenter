@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,9 @@
             <li class="header-nav-titles"><a href="#" class="header-nav-titles-links">Infos</a></li>
         </ul>
     </div>
-    <div method="post" action="" class="login">
+    <div class="login">
         <h2 class="login-title">Connectez vous</h2>
-        <form class="login-data">
+        <form action="acceuil.php" method="post" class="login-data">
             <input type="email" name="login-data-email" class="login-data-input login-data-email" placeholder="Entrez votre email" required>
             <input type="password" name="login-data-password" class="login-data-input login-data-password" placeholder="Entrez votre mot de passe" required> 
             <img src="images/eye.png" class="login-data-password-marked">
@@ -39,7 +39,7 @@
     </div>
     <div class="sigin">
         <h2 class="sigin-title">Inscrivez vous</h2>
-        <form method="post" action="" class="sigin-data">
+        <form action="acceuil.php" method="post" class="sigin-data">
             <input type="text" name="sigin-data-pseudo" class="sigin-data-input sigin-data-pseudo" placeholder="Entrez votre pseudo" required>
             <input type="email" name="sigin-data-email" class="sigin-data-input sigin-data-email" placeholder="Entrez votre email" required>
             <input type="password" name="sigin-data-password" class="sigin-data-input sigin-data-password" placeholder="Entrez votre mot de passe" required> 
@@ -58,7 +58,7 @@
         <div class="footer-contacts">
             <a href="mailto:devcenter2021@gmail.com" class="footer-contacts-gmail"><img class="footer-contacts-logo" src="images/gmail.png" alt="gmail"></a>
             <a href="https://www.github.com/ln-dev7" class="footer-contacts-github"><img class="footer-contacts-logo" src="images/github.png" alt="github"></a>
-            <a href="https://twitter.com/dev__center?s=09" class="footer-contacts-twitter"><img class="footer-contacts-logo" src="images/twitter (1).png" alt="Twitter"></a>
+            <a href="https://twitter.com/dev__center?s=09" class="footer-contacts-twitter"><img class="footer-contacts-logo" src="images/twitter.png" alt="Twitter"></a>
             <a href="https://www.instagram.com/invites/contact/?i=1cc3j464sjmrp&utm_content=lradltq" class="footer-contacts-instagram"><img class="footer-contacts-logo" src="images/instagram.png" alt="instagram"></a>
         </div>
     </div>
